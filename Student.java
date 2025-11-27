@@ -28,9 +28,16 @@ public class Student {
 	public int changeYearIfApproved() {
 		// TODO implement: the student should advance to the next year if he/she grade
 		// is >= 60
-		// Make year = year + 1, and print "Congragulations" if the student has been
+		// Make year = year + 1, and print "Congratulations" if the student has been
 		// approved
-		return 0;
+		if (grade >= 60) {
+			year = year + 1;
+			System.out.println("Congratulations");
+		} else {
+			System.out.println("Reprobado");
+		}
+		
+		return year;
 	}
 
 }

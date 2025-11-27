@@ -7,8 +7,12 @@ public class Main {
 	Student student = new Student("Brenda", "Montaño");
 	student.printFullName();
 	
-	student.grade = 55;
+	student.grade = 80;
 	student.isApproved();
+	
+	student.year = 2025;
+	int nuevoYear = student.changeYearIfApproved();
+    System.out.println("Ahora pasas al siguiente año: " + nuevoYear);
 	}
 
 }
