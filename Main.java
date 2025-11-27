@@ -6,8 +6,9 @@ public class Main {
 		
 	Student student = new Student("Brenda", "Montaño");
 	student.printFullName();
-		
-
+	
+	student.grade = 55;
+	student.isApproved();
 	}
 
 }

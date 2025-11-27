@@ -5,12 +5,12 @@ public class Student {
 	public int registration;
 	public int grade;
 	public int year;
-	
+
 	public Student(String firstName, String lastName) {
 		this.firstName = firstName.toUpperCase();
 		this.lastName = lastName.toUpperCase();
 	}
-	
+
 	public void printFullName() {
 		// TODO implement
 		System.out.println(this.firstName + " " + this.lastName);
@@ -18,6 +18,11 @@ public class Student {
 
 	public void isApproved() {
 		// TODO implement: should return true if grade >= 60
+		if (grade >= 60) {
+			System.out.println("Aprobado");
+		} else {
+			System.out.println("Reprobado");
+		}
 	}
 
 	public int changeYearIfApproved() {
@@ -27,5 +32,5 @@ public class Student {
 		// approved
 		return 0;
 	}
-	
+
 }
