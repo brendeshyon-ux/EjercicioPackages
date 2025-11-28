@@ -42,5 +42,12 @@ public class Courses {
 		}
 		return best;
 	}
+	
+	  public void enroll(Student[] students){
+	      //TODO add all the students to the collection
+		  for (Student n : students) {
+			  enroll(n);
+		  }
+	   }
 
 }// Course

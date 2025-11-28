@@ -28,12 +28,16 @@ public class Main {
 		generation.enroll(studentDos);
 		generation.enroll(studentTres);
 		
+		Student[] agregarStudents = {
+				new Student("Homar", "Carmona", 4, 52, 2025),
+				new Student("Yolanda", "Reyes", 5, 99, 2025)		
+		};
+		generation.enroll(agregarStudents);
+		
 		System.out.println("La cantidad de alumnos inscritos son de: "+ generation.countStudents());
 		
 		System.out.println("El mejor promedio es de: "+ generation.bestGrade());
-		
-		
-		
+				
 
 	}//void
 }// Main
