@@ -23,11 +23,14 @@ public class Main {
 		generation.courseName = "Java";
 		generation.professorName = "JC";
 		generation.year = 2025;
-	
 		
 		generation.enroll(student);
 		generation.enroll(studentDos);
 		generation.enroll(studentTres);
+		
+		System.out.println("La cantidad de alumnos inscritos son de: "+ generation.countStudents());
+		
+		System.out.println("El mejor promedio es de: "+ generation.bestGrade());
 		
 		
 		

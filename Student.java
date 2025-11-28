@@ -39,9 +39,7 @@ public class Student {
 			System.out.println(this.firstName + " " + this.lastName + ", Congratulations!!!" + " Pasas al siguiente año: " + year);
 		} else {
 			System.out.println(this.firstName + " " + this.lastName + ", Podrás intentarlo para el proximo año.");
-		}
-		
-		return year;
+		}return year;
 	}
 
 }

@@ -13,7 +13,6 @@ public class Courses {
 		students.add(student);
 		System.out.println(
 				student.firstName + " " + student.lastName + ", este alumno esta inscrito en " + courseName + ".");
-
 	}
 
 	public void unEnroll(Student student) {
@@ -35,7 +34,13 @@ public class Courses {
 
 	public int bestGrade() {
 		// TODO implement
-		return 0;
+		int best = 0;
+		for (Student n : students) {
+			if(n.grade > best) {
+				best = n.grade;
+			}
+		}
+		return best;
 	}
 
 }// Course
